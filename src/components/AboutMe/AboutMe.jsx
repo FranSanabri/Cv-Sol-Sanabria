@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
+import CVSS2023 from '../CV/CVSS2023.pdf';
 
 const AboutMe = () => {
     return (
@@ -13,6 +14,7 @@ const AboutMe = () => {
                 Soy estudiante de Licenciatura en Psicología en la Universidad Argentina John F. Kennedy, con el 70% de las materias aprobadas.
                 Me encantaría insertarme en el mundo laboral ocupando un lugar donde pueda aportar valor, aprender, desarrollarme y ayudar al resto de las personas con las que trabajo.
             </p>
+            <a className="cv-button" href={CVSS2023} target="_blank">Ver CV</a>
         </section>
     );
 };
