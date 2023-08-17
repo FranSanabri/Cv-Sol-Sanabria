@@ -1,0 +1,16 @@
+/* Footer.css */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

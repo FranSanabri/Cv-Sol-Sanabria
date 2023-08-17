@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #222;
+    padding: 1rem;
+    position: fixed; /* Hace que el navbar esté fijo */
+    top: 0; /* Lo ancla en la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #61dafb;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #222;
+        padding: 0.5rem; /* Reduce el padding superior e inferior */
+    }
+
+    .nav-list {
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    .nav-list li {
+        margin: 0 0.5rem; /* Agrega espacio horizontal entre elementos */
+    }
+
+    .nav-list li a {
+        font-size: 16px; /* Reduce el tamaño de fuente */
+    }
+}

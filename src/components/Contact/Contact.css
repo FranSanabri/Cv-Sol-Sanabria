@@ -1,0 +1,90 @@
+/* Contact.css */
+.contact {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-link {
+    position: relative;
+}
+
+.icon-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #61dafb;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.hover-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(97, 218, 251, 0.3);
+    opacity: 0;
+    transform: scale(0);
+    z-index: -2;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.icon {
+    font-size: 36px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.icon-link:hover .icon-background,
+.icon-link:focus .icon-background {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.icon-link:hover .hover-background,
+.icon-link:focus .hover-background {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.icon-link:hover .icon {
+    color: #61dafb;
+}
+
+/* Contact.css */
+/* ... (estilos anteriores) */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px;
+    }
+
+    .contact-icons {
+        flex-direction: row; /* Cambiamos a fila para que estén uno al lado del otro */
+        gap: 10px; /* Espacio entre los iconos */
+        justify-content: center; /* Centramos los iconos horizontalmente */
+        align-items: flex-start; /* Alineamos los iconos en la parte superior */
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+}
+
